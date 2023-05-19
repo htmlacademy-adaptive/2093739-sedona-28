@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - Галерея</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -36,7 +37,7 @@
         <img class="hero__slogan" src="img/sedona.svg" width="229" height="39" alt="Sedona.">
       </section>
       <section class="gallery">
-        <header class="gallery__header">
+        <header class="gallery__header section-header">
           <h2 class="gallery__title title">Фото и видео</h2>
           <p class="gallery__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
         </header>
@@ -46,12 +47,9 @@
               <img class="photocard__image" width="280" height="280" src="img/gallery-1.jpg" alt="Неродные просторы.">
             </a>
             <div class="photocard__info">
-              <h3 class="photocard__title title">неродные просторы</h3>
+              <h3 class="photocard__name">неродные просторы</h3>
               <p class="photocard__author">Автор фото: Борис</p>
-              <div class="photocard__like like">
-                <button class="like__submit"></button>
-                <span class="like__count">1350</span>
-              </div>
+              <p class="photocard__like">143</p>
             </div>
           </li>
           <li class="gallery__item photocard">
@@ -59,12 +57,9 @@
               <img class="photocard__image"  width="280" height="280" src="img/gallery-2.jpg" alt="Местная растительность.">
             </a>
             <div class="photocard__info">
-              <h3 class="photocard__title title">Местная растительность</h3>
+              <h3 class="photocard__name">Местная растительность</h3>
               <p class="photocard__author">Автор фото: Сергей</p>
-              <div class="photocard__like like">
-                <button class="like__submit"></button>
-                <span class="like__count">143</span>
-              </div>
+              <p class="photocard__like">96</p>
             </div>
           </li>
           <li class="gallery__item photocard">
@@ -72,11 +67,9 @@
               <img class="photocard__image" width="280" height="280" src="img/gallery-3.jpg" alt="Дорога на север.">
             </a>
             <div class="photocard__info photocard__info--additional">
-              <h3 class="photocard__title title">Дорога на север</h3>
+              <h3 class="photocard__name">Дорога на север</h3>
               <p class="photocard__author">Автор фото: Петр</p>
-              <div class="photocard__like like">
-                <button class="like__submit"></button>
-                <span class="like__count">96</span>
+              <p class="photocard__like">1350</p>
               </div>
             </div>
           </li>
@@ -85,20 +78,18 @@
               <img class="photocard__image" width="280" height="280" src="img/gallery-4.jpg" alt="Мост Дьявола.">
             </a>
             <div class="photocard__info">
-              <h3 class="photocard__title title">Мост дьявола</h3>
+              <h3 class="photocard__name">Мост дьявола</h3>
               <p class="photocard__author">Автор фото: Антон</p>
-              <div class="photocard__like like">
-                <button class="like__submit"></button>
-                <span class="like__count">254</span>
+              <p class="photocard__like">254</p>
               </div>
             </div>
           </li>
         </ul>
       </section>
       <section class="video">
-        <header class="video__header">
-          <h2 class="video__title title">Фото и видео</h2>
-          <p class="video__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+        <header class="video__header section-header">
+          <h2 class="video__title title">Все еще сомневаетесь?</h2>
+          <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </header>
         <div class="video__container"></div>
       </section>
@@ -124,8 +115,8 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">Разработано:</p>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
