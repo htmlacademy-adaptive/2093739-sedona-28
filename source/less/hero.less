@@ -1,7 +1,35 @@
 .hero {
+  padding-top: 90px;
+  padding-bottom: 85px;
   background-color: @black;
-  background-image: url(../img/divider.png), url(../img/hero-index.jpg);
+  background-image: url(../img/divider-mobile.png), url(../img/hero-index.jpg);
   background-position: bottom center;
-  background-size: cover, cover;
+  background-size: cover;
   background-repeat: no-repeat, no-repeat;
+
+  &--additional {
+    padding-top: 52px;
+    padding-bottom: 67px;
+  }
+}
+
+.hero__slogan {
+  display: block;
+  height: 214px;
+  margin: 0 auto;
+
+  &--additional {
+    height: 39px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    padding-top: 77px;
+    padding-bottom: 91px;
+    background-image: url(../img/divider-tablet.png), url(../img/hero-index.jpg);
+  }
+  .hero__slogan {
+    height: 350px;
+  }
 }
