@@ -3,9 +3,7 @@
   text-align: center;
 
   &--wide {
-    display: flex;
-    flex-direction: column;
-    background-color: @lightblue;
+    background-color: @blue;
   }
 
   &--housing,
@@ -13,39 +11,6 @@
   &--gift {
     background-color: @white;
   }
-
-  &--housing::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/house.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    left: 0;
-    top: 0;
-  }
-
-  &--food::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/food.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    left: 0;
-    top: 0;
-  }
-}
-
-.advantage__image {
-  display: block;
-}
-
-.advantage__text-container--additional {
-  padding-left: 47px;
-  text-align: left;
 }
 
 .advantage__number,
@@ -58,39 +23,9 @@
 }
 
 .advantage__title {
-  margin-top: 8px;
   color: @black;
 
   &--wide {
     color: @white;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .advantage--wide {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    grid-column: 1/-1;
-  }
-
-  .advantage--reverse {
-    flex-direction: row-reverse;
-  }
-
-  .advantage__text-container {
-    display: flex;
-    flex-direction: column;
-    width: 190px;
-    margin: 0 auto;
-    min-height: 200px;
-    padding-top: 52px;
-    padding-left: 33px;
-    padding-right: 33px;
-
-    &--additional {
-      margin: 0 auto;
-      text-align: center;
-    }
   }
 }
