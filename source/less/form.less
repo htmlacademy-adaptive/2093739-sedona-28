@@ -9,3 +9,21 @@
 .form__list {
   .list-style();
 }
+
+.form__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--impressions,
+  .form__fieldset--sights,
+  .form__fieldset--emotions,
+  .form__submit-wrapper {
+    grid-column: 1/-1;
+  }
+
+  .form__submit-wrapper {
+    flex-direction: row;
+  }
+}

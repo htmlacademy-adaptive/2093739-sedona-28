@@ -4,4 +4,11 @@
 
 .gallery__list {
   .list-style();
+  display: grid;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }

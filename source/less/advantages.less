@@ -1,4 +1,15 @@
 .advantages__list {
   .list-style();
+  display: grid;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &--additional {
+      grid-column: 1/-1;
+    }
+  }
 }
 
