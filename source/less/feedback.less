@@ -2,3 +2,13 @@
   background-color: @white;
   color: @black;
 }
+
+.feedback__form {
+  display: grid;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
